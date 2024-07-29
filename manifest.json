@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Auto Clicker for Pluralsight Summary Page",
+    "version": "1.0",
+    "description": "Automatically clicks a button on Pluralsight summary pages",
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://app.pluralsight.com/ilx/video-courses/*/*/summary"],
+        "js": ["content.js"],
+        "run_at": "document_end"
+      }
+    ]
+  }
+  
